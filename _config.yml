@@ -1,53 +1,130 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site Configuration
+theme: jekyll-theme-chirpy
+lang: en
+timezone: Africa/Algiers
 
+# SEO & Site Info
 title: Nizar's Blog
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Practical, hands-on posts about DevSecOps, penetration testing, and defensive security — tutorials, tool walkthroughs, secure CI/CD practices, threat modeling, and incident response to help engineers build and protect resilient systems.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: twitter
-github_username:  github user
+tagline: Cyber Security Engineer
+description: >-
+  Practical, hands-on posts about DevSecOps, penetration testing, and defensive security.
+  Tutorials, tool walkthroughs, secure CI/CD practices, threat modeling, and incident response
+  to help engineers build and protect resilient systems.
 
-# Build settings
-theme: minima
+url: "https://nizar.engineer"
+baseurl: ""
+
+# Profile
+github:
+  username: nizar-hk
+twitter:
+  username: twitter
+social:
+  name: Nizar Hakouane
+  email: hakouane.nizar@gmail.com
+  links:
+    - https://twitter.com/twitter
+    - https://github.com/nizar-hk
+    - https://www.linkedin.com/in/nizar-hakouane
+
+# Avatar & UI
+avatar: /assets/img/avatar.png
+toc: true
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+# Pagination
+paginate: 10
+
+# Markdown & Syntax Highlighting
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Collections
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+# Build & Compression
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+# Exclusions
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Archives (Categories & Tags)
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-archives
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

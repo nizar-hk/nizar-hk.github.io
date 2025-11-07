@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+<div class="post-content">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  {% if page.type == 'categories' or page.type == 'category' %}
+    <p class="post-subtitle">Posts in category: <strong>{{ page.name | escape }}</strong></p>
+  {% elsif page.type == 'tags' or page.type == 'tag' %}
+    <p class="post-subtitle">Posts tagged: <strong>{{ page.name | escape }}</strong></p>
+  {% endif %}
+
+  <ul class="post-list">
+    {% for post in page.posts %}
+      <li>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+        {% if post.excerpt %}
+          <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

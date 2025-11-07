@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad180" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="180" height="180" rx="40" fill="#0f172a"/>
+  
+  <path d="M 90 35 L 145 60 L 145 110 C 145 150 120 175 90 190 C 60 175 35 150 35 110 L 35 60 Z" 
+        fill="url(#grad180)" stroke="#22d3ee" stroke-width="4"/>
+  
+  <rect x="78" y="95" width="24" height="30" rx="4" fill="#0f172a" stroke="#22d3ee" stroke-width="3"/>
+  <path d="M 82 95 L 82 82 C 82 74 85 70 90 70 C 95 70 98 74 98 82 L 98 95" 
+        fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="90" cy="105" r="3" fill="#22d3ee"/>
+  <rect x="88" y="105" width="4" height="10" rx="1" fill="#22d3ee"/>
+</svg>
