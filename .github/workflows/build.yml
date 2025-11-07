@@ -31,9 +31,10 @@ jobs:
         run: |
           gem install bundler
           bundle install --no-deployment
+          bundle exec jekyll --version
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
 
