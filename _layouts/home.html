@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div id="post-list" class="post-content">
+  {% for post in site.posts %}
+    <article class="post-item mb-4">
+      <h3 class="h5">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
+      <div class="post-meta small text-muted">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        {% if post.categories.size > 0 %}
+          <span class="text-muted">in</span>
+          {% for cat in post.categories %}
+            <a href="/categories/{{ cat | slugify }}/">{{ cat }}</a>
+            {%- unless forloop.last %}<span class="text-muted">,</span>{% endunless %}
+          {% endfor %}
+        {% endif %}
+      </div>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </article>
+  {% endfor %}
+</div>

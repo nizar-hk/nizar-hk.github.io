@@ -1,0 +1,25 @@
+/* Custom styles for Nizar's Blog */
+
+/* Avatar sizing and styling */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color, #ddd);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive avatar */
+@media (max-width: 768px) {
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
