@@ -28,7 +28,7 @@ social:
     - https://www.linkedin.com/in/nizar-hakouane
 
 # Avatar & UI
-# avatar: /assets/img/avatar.png
+avatar: /assets/img/avatar.png
 toc: true
 pwa:
   enabled: true
