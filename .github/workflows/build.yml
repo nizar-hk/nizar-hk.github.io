@@ -35,9 +35,17 @@ jobs:
           bundle exec jekyll --version
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --verbose
+        run: |
+          set -e
+          bundle exec jekyll build --verbose --trace 2>&1
         env:
           JEKYLL_ENV: production
+
+      - name: Check build output
+        if: always()
+        run: |
+          echo "Checking _site directory..."
+          ls -la _site 2>/dev/null || echo "_site not found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
