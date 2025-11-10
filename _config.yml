@@ -33,9 +33,9 @@ social:
 avatar: /assets/img/avatar.png
 toc: true
 pwa:
-  enabled: true
+  enabled: false
   cache:
-    enabled: true
+    enabled: false
     deny_paths:
 
 # Pagination
