@@ -5,7 +5,9 @@ timezone: Africa/Algiers
 
 # SEO & Site Info
 google_analytics:
-  id: "G-XSMK4RRZMM"
+  id: "G-XSMK4RRZMM"  
+  pv:
+    enabled: false  
 title: Nizar's Blog
 tagline: Cyber Security Engineer
 description: >-
