@@ -32,7 +32,7 @@ Hack The Box walkthroughs focusing on methodology and reproducible steps. For pe
 
 - **Categories** group posts by topic. Use them to stay focused on one area.
 - **Tags** connect related ideas across categories (e.g., "devsecops", "detection", "automation").
-- **Archives** show all posts by date; useful if you're catching up.
+- **Archives** show all posts by date;
 
 ---
 
