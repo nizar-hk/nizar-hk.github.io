@@ -99,3 +99,5 @@ In seconds, the AI "reads" the event and gives the analyst a 3-point summary. Th
 This project taught me that cybersecurity isn't just a battle of tools; it's a war of speed. The team that can process, contextualize, and act on information the fastest, wins.
 
 This CTI Platform transforms the analyst. They are no longer a "data janitor," spending their day on copy-paste. They become a true "threat hunter," armed with a platform that provides context, identifies actors, and allows them to focus on what humans do best: making critical decisions.
+
+https://github.com/UsEr-1337-1/cti-platform
