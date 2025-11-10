@@ -100,4 +100,5 @@ This project taught me that cybersecurity isn't just a battle of tools; it's a w
 
 This CTI Platform transforms the analyst. They are no longer a "data janitor," spending their day on copy-paste. They become a true "threat hunter," armed with a platform that provides context, identifies actors, and allows them to focus on what humans do best: making critical decisions.
 
-https://github.com/UsEr-1337-1/cti-platform
+
+Check out my CTI platform code: [CTI Brain Repo](https://github.com/UsEr-1337-1/cti-platform)
